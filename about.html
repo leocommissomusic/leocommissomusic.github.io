@@ -1,0 +1,329 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Leopoldo Commisso</title>
+  <meta name="description"
+    content="Leopoldo Commisso. Musician born in Carmen de Areco, Buenos Aires, Argentina. Currently living in Rio de Janeiro, Brasil.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,500&display=swap">
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+  <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+  <!-- <div class='skewed-bg'></div> -->
+
+  <style>
+    .header-container {
+      background-color: white;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #logo-h1 {
+      margin-left: 16px;
+    }
+  </style>
+
+  <header class='header-container'>
+    <div class='header-inner'>
+      <a href="/">
+        <h1 id='logo-h1'>
+          <img id='logo' alt="Leo" src="/img/logo.svg" width="100" />
+        </h1>
+      </a>
+      <nav>
+        <ul>
+          <li ><a href="/">Home</a></li>
+          <li id='active'><a href="/about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <style>
+    .main {
+      padding-top: 40px;
+    }
+
+    .main>h1 {
+      margin-top: 56px;
+      margin-bottom: 16px;
+    }
+
+    .main,
+    .article {
+      text-align: center;
+    }
+
+    .article p {
+      /* font-size: 20px; */
+    }
+
+    .article ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .article li {
+      height: 300px;
+    }
+
+    .article li img {
+      width: 100%;
+    }
+  </style>
+
+  <style>
+    .article.highlight {
+      background-color: #f8f7fd;
+      color: var(--accent-one-color);
+      /* border-top: 4px solid var(--foreground-color); */
+      padding: 56px 28px 80px 28px;
+      position: relative;
+    }
+
+    .article.highlight>div {
+      position: relative;
+      z-index: 1;
+    }
+
+    p .highlight {
+      border-bottom: 3px solid var(--foreground-color);
+      font-weight: bold;
+      font-size: 120%;
+    }
+  </style>
+
+  <style>
+    .article-flex {
+      max-width: 780px;
+      margin: auto;
+    }
+
+    .article-flex p {
+      max-width: 420px;
+      font-size: 20px;
+    }
+
+    .article-flex img {
+      max-width: 620px;
+    }
+  </style>
+
+  <style>
+    .featured-work {
+      text-align: left;
+      margin: auto;
+      padding: 40px 16px;
+      border-top: 1px solid #f1f1f1;
+    }
+
+    .featured-work:first-of-type {
+      border-top: 0;
+    }
+
+    .featured-work:last-child {
+      border-bottom: 1px solid #f1f1f1;
+    }
+
+    @media screen and (min-width: 640px) {
+      .featured-work {}
+
+      .featured-work h2 {
+        margin-bottom: 8px;
+      }
+
+      .featured-work .featured-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .featured-work .featured-text {
+        max-width: 530px;
+        padding-left: 16px;
+      }
+
+      .featured-text p {
+        color: var(--accent-one-color);
+      }
+    }
+
+    .featured-img#penedo {
+      background-image: url('/img/photos/leo.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 420px;
+      width: 100%;
+    }
+  </style>
+
+  <section class='main-container breathing-room'>
+    <main class='main wrapper'>
+
+      <article class='article featured-work'>
+        <div class='featured-img' id="penedo">
+        </div>
+
+        <div class='featured-text'>
+          <h2>
+            About
+          </h2>
+    
+          <p>
+            Leopoldo Commisso was born in Carmen de Areco, a town in the Buenos Aires Province of Argentina.
+          </p>
+          
+          <p>
+            His aspirations and thirst for music lead him across the Americas from USA to Bolivia.
+            Each living experience provided leopoldo with a rich and multi-cultured mindset which is reflected
+            with in every music he composes.
+          </p>
+          <p>
+            Leo currently resides in Penedo, Rio de Janeiro, Brasil.
+          </p>
+        </div>
+
+      </article>
+
+
+      <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(8, 5vw);
+            grid-gap: 8px;
+            margin-bottom: 100px;
+        }
+        .gallery__item {
+          margin-inline-start: 0;
+          margin-inline-end: 0;
+          margin: 4px;
+        }
+        .gallery__img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .gallery__item--1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .gallery__item--2 {
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .gallery__item--3 {
+            grid-column-start: 5;
+            grid-column-end: 9;
+            grid-row-start: 1;
+            grid-row-end: 6;
+        }
+        .gallery__item--4 {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 3;
+            grid-row-end: 6;
+        }
+        .gallery__item--5 {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 6;
+            grid-row-end: 9;
+        }
+        .gallery__item--6 {
+            grid-column-start: 5;
+            grid-column-end: 9;
+            grid-row-start: 6;
+            grid-row-end: 9;
+        }
+      </style>
+
+      <hr>
+
+      <div class="gallery">
+        <figure class="gallery__item gallery__item--1">
+          <img src="img/photos/cello.jpg" class="gallery__img" alt="Image 1">
+        </figure>
+        <figure class="gallery__item gallery__item--2">
+          <img src="img/photos/cello2.jpg" class="gallery__img" alt="Image 2">
+        </figure>
+        <figure class="gallery__item gallery__item--3">
+          <img src="img/photos/farias.jpg" class="gallery__img" alt="Image 3">
+        </figure>
+        <figure class="gallery__item gallery__item--4">
+          <img src="img/photos/leo2.png" class="gallery__img" alt="Image 4">
+        </figure>
+        <figure class="gallery__item gallery__item--5">
+          <img src="img/photos/cello-electric.png" class="gallery__img" alt="Image 5">
+        </figure>
+        <figure class="gallery__item gallery__item--6">
+          <img src="img/photos/dread-farias.jpg" class="gallery__img" alt="Image 6">
+        </figure>
+      </div>
+
+      <!-- <article class='article' style="padding-top: 56px;">
+
+              <div class='btn cta'> 
+                <a class='btn' href="https://twitter.com/fdcommisso" alt="" target="_blank" nofollow>Get in touch</a>
+              </div>
+
+            </article> -->
+    </main>
+  </section>
+
+  <section class='footer-container'>
+    <footer class='footer wrapper'>
+      <img src="./img/logo.png" alt="logo" id="footer-logo" width="100" />
+      <span id="copyright" class='text-center' property="dc:rights">&copy;
+        <span property="dc:dateCopyrighted">2021 </span>
+        <span property="dc:publisher">leocommisso.com</span>
+      </span>
+    </footer>
+  </section>
+
+
+  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script> -->
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script> -->
+
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', '');
+  </script> -->
+
+</body>
+
+</html>

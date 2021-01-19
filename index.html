@@ -1,0 +1,497 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Leopoldo Commisso</title>
+        <meta name="description" content="Leopoldo Commisso. Musician born in Carmen de Areco, Buenos Aires, Argentina. Currently living in Rio de Janeiro, Brasil.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,500&display=swap">
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- <div class='skewed-bg'></div> -->
+
+        <style>
+          .header-container {
+            background-color: white;
+          }
+          .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+
+          #logo-h1 {
+            margin-left: 16px;
+          }
+        </style>
+
+        <header class='header-container'>
+          <div class='header-inner'>
+            <a href="/">
+              <h1 id='logo-h1'>
+                <img id='logo' alt="Leo" src="/img/logo.svg" width="100" />
+              </h1>
+            </a>
+            <nav>
+              <ul>
+                <li id='active'><a href="/">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+        
+        <style>
+          @keyframes hero {
+            from {
+              height: 100vh;
+            } to {
+              height: 0vh;
+            }
+          }
+
+          .hero-container {
+            background-color: white;
+            transform-origin: top center;
+            position: relative;
+          }
+        
+          .hero-wrapper {
+            position: relative;
+            z-index: 1;
+            padding: 60px 0;
+            text-align: center;
+            max-width: 620px;
+            margin: auto;
+          }
+        </style>
+
+        <section class="hero-container">
+          <article class="hero-content">
+            <div class='hero-wrapper'>
+
+              <h1>Leopoldo Commisso</h1>
+
+              <img src='/img/bg.png' alt='Leopoldo Commisso' width="100%" />
+              
+              <p class='lead'>
+                Domingo 20 de Setembro ás 15:00hs
+              </p>
+              
+            </div>
+          </article>
+        </section>
+
+
+        <style>
+          .main {
+            padding-top: 40px;
+          }
+
+          .main .wrapper {
+            padding-top: 0;
+          }
+
+          .main > h1 {
+            margin-top: 56px;
+            margin-bottom: 16px;
+          }
+
+          .main, .article {
+            text-align: center;
+          }
+
+          .article p {
+            /* font-size: 20px; */
+          }
+
+          .article ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+          }
+
+          .article li {
+            height: 300px;
+          }
+
+          .article li img {
+            width: 100%;
+          }
+        </style>
+
+        <style>
+          .lead {
+            color: var(--accent-one-color);
+            font-size: 22px;
+            line-height: 1.4;
+            max-width: 320px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 24px;
+            margin-bottom: 0;
+          }
+
+          @media screen and (min-width: 640px) {
+            .lead {
+              max-width: unset;
+            }
+          }
+
+          @media screen and (min-width: 980px) {
+            .lead {
+              font-size: 24px;
+              max-width: unset;
+            }
+          }
+        </style>
+
+        <style>
+          .article.highlight {
+            background-color: #f8f7fd;
+            color: var(--accent-one-color);
+            /* border-top: 4px solid var(--foreground-color); */
+            padding: 56px 28px 80px 28px;
+            position: relative;
+          }
+          .article.highlight > div {
+            position: relative;
+            z-index: 1;
+          }
+
+          p .highlight {
+            border-bottom: 3px solid var(--foreground-color);
+            font-weight: bold;
+            font-size: 120%;
+          }
+        </style>
+
+        <style>
+          .article-flex {
+            max-width: 780px;
+            margin: auto;
+          }
+
+          .article-flex p {
+            max-width: 420px;
+            font-size: 20px;
+          }
+
+          .article-flex img {
+            max-width: 620px;
+          }
+        </style>
+
+          <style>
+            .featured-work {
+              text-align: left;
+              margin: auto;
+              padding: 16px 16px;
+              border-top: 1px solid #f1f1f1;
+            }
+          
+            .featured-work:first-of-type {
+              border-top: 0;
+            }
+          
+            .featured-work:last-child {
+              border-bottom: 1px solid #f1f1f1;
+            }
+          
+            @media screen and (min-width: 640px) {
+              .featured-work {}
+          
+              .featured-work h2 {
+                margin-bottom: 8px;
+              }
+          
+              .featured-work .featured-img {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+          
+              .featured-work .featured-text {
+                max-width: 530px;
+                padding-left: 4px;
+              }
+          
+              .featured-text p {
+                color: var(--accent-one-color);
+              }
+            }
+          </style>
+
+        <section class='main-container breathing-room'>
+          <main class='main wrapper'>
+
+            <article class='article featured-work'>
+              <div class='featured-text'>
+                <h2>
+                  MUSICALOOP
+                </h2>
+            
+                <!-- <a href="http://" target="_blank"> CLick Here </a> -->
+            
+              </div>
+            
+              <div class='featured-img'>
+                <div class="youtube-player" data-id="dCbOx-GAz_I" data-thumb='/img/musicaloop.png'></div>
+              </div>
+
+              <div class='featured-text'>
+                <p>
+                  Apoio: Superintendência de Cultura e Municipalidade de Itatiaia
+                </p>
+                <p>
+                  Edital: Ley Aldir Blanc
+                </p>
+              </div>
+            </article>
+
+
+            <article class='article featured-work'>
+
+              <div class='featured-text'>
+                <h2>
+                  Carnaval de Ilusões
+                </h2>
+              </div>
+
+              <div class='featured-img'>
+                <div class="youtube-player" data-id="J5Sd0dcL4yQ" data-thumb='/img/carnaval.png'></div>
+              </div>
+
+              <div class='featured-text'>
+                <p>
+                  Video clip gravado para o Edital Cultura Presente nas Redes, da Secretaria Estadual de Cultura e Economia Criativa do
+                  Estado de Rio de Janeiro.
+                </p>
+              </div>
+            
+            </article>
+
+
+            <article class='article featured-work'>
+              <div class='featured-text'>
+                <h2>
+                  Fantasia cor sangue
+                </h2>
+              </div>
+
+              <div class='featured-img'>
+                <div class="youtube-player" data-id="POEgb7j8wIM" data-thumb='/img/fantasia.png'></div>
+              </div>
+
+              <div class='featured-text'>
+                <p>
+                  Video clip gravado para o Edital Cultura Presente nas Redes, da Secretaria Estadual de Cultura e Economia Criativa
+                  do
+                  Estado de Rio de Janeiro.
+                </p>
+              </div>
+            </article>
+
+            <article class='article featured-work'>
+              <div class='featured-text'>
+                <h2>
+                  Musica quântica
+                </h2>
+              </div>
+            
+              <div class='featured-img'>
+                <div class="youtube-player" data-id="alI0mo5LbGQ" data-thumb='/img/quantica.png'></div>
+              </div>
+            
+              <div class='featured-text'>
+                <p>
+                  Video clip gravado para o Edital Cultura Presente nas Redes, da Secretaria Estadual de Cultura e Economia Criativa
+                  do
+                  Estado de Rio de Janeiro.
+                </p>
+              </div>
+            </article>
+
+
+            <article class='article featured-work'>
+              <div class='featured-text'>
+                <h2>
+                  Desabafo em Tempos de Quarentena
+                </h2>
+              </div>
+            
+              <div class='featured-img'>
+                <div class="youtube-player" data-id="u6Yy4S5VspA" data-thumb='/img/desabafo.png'></div>
+              </div>
+            
+              <div class='featured-text'>
+                <p>
+                  Projeto gravado para o Edital Cultura Presente nas Redes, da Secretaria Estadual de Cultura e Economia Criativa do
+                  Estado de Rio de Janeiro.
+                </p>
+              </div>
+            </article>
+
+            <br><br><br><br>
+
+            <!-- <article class='article' style="padding-top: 56px;">
+
+              <div class='btn cta'> 
+                <a class='btn' href="https://twitter.com/" alt="" target="_blank" nofollow>Get in touch</a>
+              </div>
+
+            </article> -->
+          </main>
+        </section>
+
+        <section class='footer-container'>
+          <footer class='footer wrapper'>
+            <img src="./img/logo.png" alt="logo" id="footer-logo" width="100" />
+            <span id="copyright" class='text-center' property="dc:rights">&copy;
+              <span property="dc:dateCopyrighted">2021 </span>
+              <span property="dc:publisher">leocommisso.com</span>
+            </span>
+          </footer>
+        </section>
+
+
+        <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script> -->
+
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script> -->
+        
+        <style>
+          .youtube-player {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            width: 100%;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            margin: 5px;
+          }
+        
+          .youtube-player iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 100;
+            background: transparent;
+          }
+        
+          .youtube-player img {
+            object-fit: cover;
+            display: block;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+            max-width: 100%;
+            width: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            border: none;
+            height: auto;
+            cursor: pointer;
+            -webkit-transition: 0.4s all;
+            -moz-transition: 0.4s all;
+            transition: 0.4s all;
+          }
+        
+          .youtube-player img:hover {
+            filter: brightness(75%);
+            -webkit-filter: brightness(75%);
+          }
+        
+          .youtube-player .play {
+            height: 72px;
+            width: 72px;
+            left: 50%;
+            top: 50%;
+            margin-left: -36px;
+            margin-top: -36px;
+            position: absolute;
+            background: url('/img/play_icon_white.png') no-repeat;
+            background-size: 100%;
+            cursor: pointer;
+          }
+        </style>
+
+        <script>
+          /*
+           * Light YouTube Embeds by @labnol
+           * Credit: https://www.labnol.org/
+           */
+
+          function labnolIframe(div) {
+            var iframe = document.createElement('iframe');
+            iframe.setAttribute(
+              'src',
+              'https://www.youtube.com/embed/' + div.dataset.id + '?autoplay=1&rel=0'
+            );
+            iframe.setAttribute('frameborder', '0');
+            iframe.setAttribute('allowfullscreen', '1');
+            iframe.setAttribute(
+              'allow',
+              'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
+            );
+            div.parentNode.replaceChild(iframe, div);
+          }
+
+          function initYouTubeVideos() {
+            var playerElements = document.getElementsByClassName('youtube-player');
+            console.log(playerElements);
+            for (var n = 0; n < playerElements.length; n++) {
+              var videoId = playerElements[n].dataset.id;
+              var div = document.createElement('div');
+              div.setAttribute('data-id', videoId);
+              var thumbNode = document.createElement('img');
+              var thumbsrc = playerElements[n].dataset.thumb || '';
+              thumbNode.src = thumbsrc.replace(
+                'ID',
+                videoId
+              );
+              div.appendChild(thumbNode);
+              var playButton = document.createElement('div');
+              playButton.setAttribute('class', 'play');
+              div.appendChild(playButton);
+              div.onclick = function () {
+                labnolIframe(this);
+              };
+              playerElements[n].appendChild(div);
+            }
+          }
+
+          document.addEventListener('DOMContentLoaded', initYouTubeVideos);
+        </script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <!-- <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', '');
+        </script> -->
+
+    </body>
+</html>

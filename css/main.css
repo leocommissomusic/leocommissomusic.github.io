@@ -69,6 +69,30 @@ body {
   background-color: white;
 }
 
+
+.header-container {
+  background-color: white;
+}
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo-h1 {
+  margin-left: 16px;
+}
+
+#logo-h1 img {
+  width: 64px;
+}
+
+@media screen and (min-width: 640px) {
+  #logo-h1 img {
+    width: 100px;
+  }
+}
+
 /* ==============
   FOOTER
    ============== */
@@ -88,8 +112,10 @@ body {
   background-color: white;
 }
 
-#footer-icon {
+#footer-logo {
   width: 3em;
+  margin-left: 16px;
+  margin-right: 8px;
 }
 
 @media screen and (min-width: 640px) {
@@ -112,7 +138,7 @@ nav ul {
 
 nav li {
   display: inline-block;
-  margin: 0 16px;
+  margin: 0;
   position: relative;
 }
 
@@ -144,6 +170,7 @@ nav a {
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
+  font-size: 16px;
 
   color: var(--accent-one-color);
 }
@@ -218,10 +245,18 @@ a:active {
   INTERMEDIATE: Menu
    ==================== */
 
-  /* nav a {
+  nav {
+    margin-right: 16px;
+  }
+
+  nav a {
     margin: 0 1.7%;
     padding: 25px 2%;
     margin-bottom: 0;
+  }
+
+  nav li {
+    margin: 0 16px;
   }
 
   nav li:first-child a {
@@ -230,19 +265,19 @@ a:active {
 
   nav li:last-child a {
     margin-right: 0;
-  } */
+  }
 
 /* ========================
   INTERMEDIATE: IE Fixes
    ======================== */
 
-  /* nav ul li {
+  nav ul li {
     display: inline-block;
   }
 
   .oldie nav a {
     margin: 0 0.7%;
-  } */
+  }
 }
 
 @media only screen and (min-width: 768px) {

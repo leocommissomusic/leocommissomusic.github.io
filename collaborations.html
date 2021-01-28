@@ -36,6 +36,7 @@
           <li><a href="/">Work</a></li>
           <li><a href="/about.html">About</a></li>
           <li id='active'><a href="/collaborations.html">Collab</a></li>
+          <li><a href="/events.html">Events</a></li>
         </ul>
       </nav>
     </div>
@@ -132,6 +133,16 @@
       border-bottom: 1px solid #f1f1f1;
     }
 
+    .featured-img#coletivo {
+      background-image: url('/img/coletivo-cover.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      /* height: 420px; */
+      height: 250px;
+      width: 100%;
+    }
+
     @media screen and (min-width: 640px) {
       .featured-work {}
           
@@ -154,15 +165,10 @@
       .featured-text p {
         color: var(--accent-one-color);
       }
-    }
 
-    .featured-img#penedo {
-      background-image: url('/img/coletivo-cover.jpg');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      height: 420px;
-      width: 100%;
+      .featured-img#coletivo {
+        height: 420px;
+      }
     }
   </style>
 
@@ -176,7 +182,7 @@
           </h2>
         </div>
 
-        <div class='featured-img' id="penedo">
+        <div class='featured-img' id="coletivo">
         </div>
 
         <div class='featured-text'>

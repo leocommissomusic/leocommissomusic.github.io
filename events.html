@@ -34,9 +34,9 @@
       <nav>
         <ul>
           <li ><a href="/">Work</a></li>
-          <li id='active'><a href="/about.html">About</a></li>
+          <li><a href="/about.html">About</a></li>
           <li><a href="/collaborations.html">Collab</a></li>
-          <li><a href="/events.html">Events</a></li>
+          <li id='active'><a href="/events.html">Events</a></li>
         </ul>
       </nav>
     </div>
@@ -77,27 +77,6 @@
 
     .article li img {
       width: 100%;
-    }
-  </style>
-
-  <style>
-    .article.highlight {
-      background-color: #f8f7fd;
-      color: var(--accent-one-color);
-      /* border-top: 4px solid var(--foreground-color); */
-      padding: 56px 28px 80px 28px;
-      position: relative;
-    }
-
-    .article.highlight>div {
-      position: relative;
-      z-index: 1;
-    }
-
-    p .highlight {
-      border-bottom: 3px solid var(--foreground-color);
-      font-weight: bold;
-      font-size: 120%;
     }
   </style>
 
@@ -156,131 +135,82 @@
         color: var(--accent-one-color);
       }
     }
+  </style>
 
-    .featured-img#penedo {
-      background-image: url('/img/photos/leo.jpg');
+  <style>
+    .hero {
+      background: #3a3841 url('/img/leo.jpg');
       background-repeat: no-repeat;
-      background-size: cover;
       background-position: center;
+      background-size: contain;
       height: 420px;
-      width: 100%;
+    }
+    @media screen and (min-width: 640px) {
+      .hero {
+        height: 620px;
+      }
     }
   </style>
 
   <section class='main-container breathing-room'>
+
+    <div class='hero'></div>
+
     <main class='main wrapper'>
 
       <article class='article featured-work'>
-        <div class='featured-img' id="penedo">
-        </div>
-
         <div class='featured-text'>
           <h2>
-            About
+            <a nofollow
+              href="https://www.homemcerveja.com.br/cevejaria-penedon-promove-beer-stage-com-leopoldo-commisso-e-vini-rocha-neste-final-de-semana/">
+              Cevejaria Penedon promove Beer Stage com Leopoldo Commisso e Vini Rocha, neste final de semana - 06/15/2018
+            </a>
           </h2>
-          
           <p>
-            Violoncellista, músico e compositor, nascido na Argentina, completou seus estudos nos Estados Unidos para depois estudar
-            violoncello no Conservatório de Música Manuel de Falla, em Buenos Aires. Radicado na região das Agulhas Negras desde
-            2012, Léo Commisso é um músico que percorre estilos diversos - autoral, clássico, latino, rock, surf music - mas
-            continua seus estudos no cello, apresentando-se regularmente em Penedo e Visconde Mauá. Faz parte do Coletivo Nosso Novo
-            Som, de Penedo, e com diferentes formações musicais já se apresentou em Barra do Piraí, na praia da Barra da Tijuca e em
-            muitos lugares.
+            <a nofollow
+              href="https://www.homemcerveja.com.br/cevejaria-penedon-promove-beer-stage-com-leopoldo-commisso-e-vini-rocha-neste-final-de-semana/">
+              Beer Stage com Leopoldo Commisso e Vini Rocha
+            </a>
           </p>
-
         </div>
+      </article>
 
+      <article class='article featured-work'>
+        <div class='featured-text'>
+          <h2>
+            <a nofollow href="https://www.olhovivoca.com.br/cena-alternativa/6633/feira-e-sarau-no-arcanjo-gabriel-em-penedo/">
+              Feira e sarau no Arcanjo Gabriel em Penedo - 07/12/2017
+            </a>
+          </h2>
+          <p>
+            <a nofollow href="https://www.olhovivoca.com.br/cena-alternativa/6633/feira-e-sarau-no-arcanjo-gabriel-em-penedo/">
+              Exposição de mandalas, música e muito mais são as atrações da Feira D´Arcanjo & Sarau Arte e Espiritualidade
+            </a>
+          </p>
+        </div>
       </article>
 
 
-      <style>
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(8, 1fr);
-            grid-template-rows: repeat(8, 5vw);
-            grid-gap: 8px;
-            margin-bottom: 100px;
-        }
-        .gallery__item {
-          margin-inline-start: 0;
-          margin-inline-end: 0;
-          margin: 4px;
-        }
-        .gallery__img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .gallery__item--1 {
-            grid-column-start: 1;
-            grid-column-end: 3;
-            grid-row-start: 1;
-            grid-row-end: 3;
-        }
-        .gallery__item--2 {
-            grid-column-start: 3;
-            grid-column-end: 5;
-            grid-row-start: 1;
-            grid-row-end: 3;
-        }
-        .gallery__item--3 {
-            grid-column-start: 5;
-            grid-column-end: 9;
-            grid-row-start: 1;
-            grid-row-end: 6;
-        }
-        .gallery__item--4 {
-            grid-column-start: 1;
-            grid-column-end: 5;
-            grid-row-start: 3;
-            grid-row-end: 6;
-        }
-        .gallery__item--5 {
-            grid-column-start: 1;
-            grid-column-end: 5;
-            grid-row-start: 6;
-            grid-row-end: 9;
-        }
-        .gallery__item--6 {
-            grid-column-start: 5;
-            grid-column-end: 9;
-            grid-row-start: 6;
-            grid-row-end: 9;
-        }
-      </style>
-
-      <hr>
-
-      <div class="gallery">
-        <figure class="gallery__item gallery__item--1">
-          <img src="img/photos/cello.jpg" class="gallery__img" alt="Image 1">
-        </figure>
-        <figure class="gallery__item gallery__item--2">
-          <img src="img/photos/cello2.jpg" class="gallery__img" alt="Image 2">
-        </figure>
-        <figure class="gallery__item gallery__item--3">
-          <img src="img/photos/farias.jpg" class="gallery__img" alt="Image 3">
-        </figure>
-        <figure class="gallery__item gallery__item--4">
-          <img src="img/photos/leo2.png" class="gallery__img" alt="Image 4">
-        </figure>
-        <figure class="gallery__item gallery__item--5">
-          <img src="img/photos/cello-electric.png" class="gallery__img" alt="Image 5">
-        </figure>
-        <figure class="gallery__item gallery__item--6">
-          <img src="img/photos/dread-farias.jpg" class="gallery__img" alt="Image 6">
-        </figure>
-      </div>
+      <article class='article featured-work'>
+        <div class='featured-text'>
+          <h2>
+            <a nofollow
+              href="http://g1.globo.com/rj/sul-do-rio-costa-verde/noticia/2016/01/violoncelista-leopoldo-commisso-faz-concerto-em-resende-rj.html">
+              Violoncelista Leopoldo Commisso faz concerto em Resende, RJ - 10/01/2016
+            </a>
+          </h2>
+          <p>
+            <a nofollow
+              href="http://g1.globo.com/rj/sul-do-rio-costa-verde/noticia/2016/01/violoncelista-leopoldo-commisso-faz-concerto-em-resende-rj.html">
+              Evento domingo (10), no Centro Cultural Visconde de Mauá.
+              Apresentação abre temporada de 2016 do local.
+            </a>
+          </p>
+        </div>
+      </article>
 
       <br><br><br><br>
 
-      <!-- <article class='article' style="padding-top: 56px;">
-
-              <div class='btn cta'> 
-                <a class='btn' href="https://twitter.com/fdcommisso" alt="" target="_blank" nofollow>Get in touch</a>
-              </div>
-
-            </article> -->
     </main>
   </section>
 
